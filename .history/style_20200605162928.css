@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: "微软雅黑";
+    color: #14191e;
+}
+.main{
+    width: 1120px;
+    height: 460px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+.slider{
+    position: relative;
+    width: 1120px;
+    height: 460px;
+}
+.img{
+    position: absolute;
+    width: 1120px;
+    height: 460px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: none;
+}
+.img1{
+    background-image: url(img/bg1.jpg);
+}
+.img2{
+    background-image: url(img/bg2.jpg);
+}
+.img3{
+    background-image: url(img/bg3.jpg);
+}
+.img-active{
+    display: block;
+}

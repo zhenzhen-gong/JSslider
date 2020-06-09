@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS实现轮播图</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <div class="main" id="main">
+        <!-- 图片轮播 -->
+        <div class="slider" id="slider">
+            <a href="">
+                <div class="img img1 img-active"></div>
+            </a>
+            <a href="">
+                <div class="img img2"></div>
+            </a>
+            <a href="">
+                <div class="img img3"></div>
+            </a>
+        </div>
+        <!-- 左右箭头 -->
+        <a href="javascript:vioce(0)" class="button left" id="left"></a>
+        <a href="javascript:vioce(0)" class="button right" id="right"></a>
+        <!-- 圆点切换 -->
+        <div class="circle" id="circle"> 
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav"></div>
+        <div class="content"></div>
+    </div>
+</body>
+
+</html>

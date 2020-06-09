@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: "微软雅黑";
+    color: #14191e;
+}
+.main{
+    position: relative;
+    width: 1120px;
+    height: 460px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+.slider{
+    position: relative;
+    width: 1120px;
+    height: 460px;
+}
+.img{
+    position: absolute;
+    width: 1120px;
+    height: 460px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: none;
+}
+.img1{
+    background-image: url(img/bg1.jpg);
+}
+.img2{
+    background-image: url(img/bg2.jpg);
+}
+.img3{
+    background-image: url(img/bg3.jpg);
+}
+.img-active{
+    display: block;
+}
+.button{
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    left: 244px;
+    top: 50%;
+    margin-top: -40px;
+    background:url(img/arrow.png) no-repeat center center ;
+}
+.button:hover{
+    background-color: #333;
+    opacity: 0.3;
+    filter: alpha(opacity=80);/*是为了解决兼容问题，属于css3的filter属性*/
+}
+.right{
+    left: auto;
+    right: 0;
+}
+.left{
+    transform: rotate(180deg);
+}
+.circle{
+    position: absolute;
+    right: 20px;
+    bottom: 24px;
+}
+.circle span{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: rgba(7, 17, 27, 0.3);
+}
+

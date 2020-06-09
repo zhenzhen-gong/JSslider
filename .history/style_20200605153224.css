@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+}
+.img{
+    width: 1120px;
+    height: 480px;
+    margin: 30px auto 0;
+}

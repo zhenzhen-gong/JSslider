@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS实现轮播图</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <div class="main" id="main">
+        <!-- 导航栏 -->
+        <div class="menu-box">
+            <div class="menu-title">
+                <a href="#">
+                    <span class="text">手机、配件</span><span class="ico">&#xe665;</span>
+                </a>
+            </div>
+            <div class="menu-title">
+                <a href="#">
+                    <span class="text">电脑</span><span class="ico">&#xe665;</span>
+                </a>
+            </div>
+            <div class="menu-title">
+                 <a href="#">
+                    <span class="text">家用电脑</span><span class="ico">&#xe665;</span>
+                </a>
+            </div>
+            <div class="menu-title">
+                <a href="#">
+                    <span class="text">家具</span><span class="ico">&#xe665;</span>
+                </a>
+            </div>
+        </div>
+        <!-- 子菜单 -->
+        <div class="menu-content">
+            <!-- 每个一级menu对应的内容 -->
+            <div class="content-box">
+                <h4>手机、配件</h4>
+                <ul>
+                    <li>
+                        <span class="title">手机通讯录：</span>
+                        <a href="#">手机</a>
+                        <span>/</span>
+                        <a href="#">手机维修</a>
+                        <span>/</span>
+                        <a href="#">以旧换新</a>
+                    </li>
+                    <li>
+                        <span class="title">手机配件：</span>
+                        <a href="#">手机壳</a>
+                        <span>/</span>
+                        <a href="#">手机储存卡</a>
+                        <span>/</span>
+                        <a href="#">数据线</a>
+                        <span>/</span>
+                        <a href="#">充电器</a>
+                        <span>/</span>
+                        <a href="#">电池</a>
+                    </li>
+                    <li>
+                        <span class="title">运营商：</span>
+                        <a href="#">中国移动</a>
+                        <span>/</span>
+                        <a href="#">中国联通</a>
+                        <span>/</span>
+                        <a href="#">中国电信</a>
+                    </li>
+                    <li>
+                        <span class="title">智能设备：</span>
+                        <a href="#">智能手环</a>
+                        <span>/</span>
+                        <a href="#">智能家具</a>
+                        <span>/</span>
+                        <a href="#">智能手表</a>
+                        <span>/</span>
+                        <a href="#">其他配件</a>
+                    </li>
+                    <li>
+                        <span class="title">娱乐：</span>
+                        <a href="#">耳机</a>
+                        <span>/</span>
+                        <a href="#">音响</a>
+                        <span>/</span>
+                        <a href="#">麦克风</a>
+                        <span>/</span>
+                        <a href="#">收音机</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <h4>电脑</h4>
+                <ul>
+                    <li>
+                        <span class="title">电脑：</span>
+                        <a href="#">笔记本</a>
+                        <span>/</span>
+                        <a href="#">平板</a>
+                        <span>/</span>
+                        <a href="#">一体机</a>
+                    </li>
+                    <li>
+                        <span class="title">电脑配件：</span>
+                        <a href="#">显示器</a>
+                        <span>/</span>
+                        <a href="#">CPU</a>
+                        <span>/</span>
+                        <a href="#">主板</a>
+                        <span>/</span>
+                        <a href="#">硬盘</a>
+                        <span>/</span>
+                        <a href="#">电源</a>
+                        <span>/</span>
+                        <a href="#">显卡</a>
+                        <span>/</span>
+                        <a href="#">其他配件</a>
+                    </li>
+                    <li>
+                        <span class="title">游戏设备：</span>
+                        <a href="#">游戏机</a>
+                        <span>/</span>
+                        <a href="#">耳机</a>
+                        <span>/</span>
+                        <a href="#">游戏设备</a>
+                    </li>
+                    <li>
+                        <span class="title">智能设备：</span>
+                        <a href="#">智能手环</a>
+                        <span>/</span>
+                        <a href="#">智能家具</a>
+                        <span>/</span>
+                        <a href="#">智能手表</a>
+                        <span>/</span>
+                        <a href="#">其他配件</a>
+                    </li>
+                    <li>
+                        <span class="title">娱乐：</span>
+                        <a href="#">耳机</a>
+                        <span>/</span>
+                        <a href="#">音响</a>
+                        <span>/</span>
+                        <a href="#">麦克风</a>
+                        <span>/</span>
+                        <a href="#">收音机</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <h4>家用电器</h4>
+                <ul>
+                    <li>
+                        <span class="title">电视：</span>
+                        <a href="#">国产品牌/a>
+                        <span>/</span>
+                        <a href="#">韩国品牌</a>
+                        <span>/</span>
+                        <a href="#">欧美品牌</a>
+                    </li>
+                    <li>
+                        <span class="title">空调：</span>
+                        <a href="#">显示器</a>
+                        <span>/</span>
+                        <a href="#">柜式</a>
+                        <span>/</span>
+                        <a href="#">中央</a>
+                        <span>/</span>
+                        <a href="#">壁挂式</a>
+                    </li>
+                    <li>
+                        <span class="title">冰箱：</span>
+                        <a href="#">多门</a>
+                        <span>/</span>
+                        <a href="#">对开门</a>
+                        <span>/</span>
+                        <a href="#">三门</a>
+                        <span>/</span>
+                        <a href="#">双开门</a>
+                    </li>
+                    <li>
+                        <span class="title">智能设备：</span>
+                        <a href="#">智能手环</a>
+                        <span>/</span>
+                        <a href="#">智能家具</a>
+                        <span>/</span>
+                        <a href="#">智能手表</a>
+                        <span>/</span>
+                        <a href="#">其他配件</a>
+                    </li>
+                    <li>
+                        <span class="title">娱乐：</span>
+                        <a href="#">耳机</a>
+                        <span>/</span>
+                        <a href="#">音响</a>
+                        <span>/</span>
+                        <a href="#">麦克风</a>
+                        <span>/</span>
+                        <a href="#">收音机</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <h4>家具</h4>
+                <ul>
+                    <li>
+                        <span class="title">家纺：</span>
+                        <a href="#">被子</a>
+                        <span>/</span>
+                        <a href="#">枕头</a>
+                        <span>/</span>
+                        <a href="#">四件套</a>
+                        <span>/</span>
+                        <a href="#">床垫</a>
+                    </li>
+                    <li>
+                        <span class="title">灯具：</span>
+                        <a href="#">台灯</a>
+                        <span>/</span>
+                        <a href="#">顶灯</a>
+                        <span>/</span>
+                        <a href="#">节能灯</a>
+                        <span>/</span>
+                        <a href="#">应急灯</a>
+                        <span>/</span>
+                        <a href="#">感应灯</a>
+                    </li>
+                    <li>
+                        <span class="title">厨具：</span>
+                        <a href="#">餐具</a>
+                        <span>/</span>
+                        <a href="#">菜板刀具</a>
+                        <span>/</span>
+                        <a href="#">锅具</a>
+                    </li>
+                    <li>
+                        <span class="title">家装：</span>
+                        <a href="#">智能手环</a>
+                        <span>/</span>
+                        <a href="#">智能家具</a>
+                        <span>/</span>
+                        <a href="#">智能手表</a>
+                        <span>/</span>
+                        <a href="#">其他配件</a>
+                    </li>
+                    <li>
+                        <span class="title">生活日用：</span>
+                        <a href="#">耳机</a>
+                        <span>/</span>
+                        <a href="#">音响</a>
+                        <span>/</span>
+                        <a href="#">麦克风</a>
+                        <span>/</span>
+                        <a href="#">收音机</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 图片轮播 -->
+        <div class="slider" id="slider">
+            <a href="">
+                <div class="img img1 img-active"></div>
+            </a>
+            <a href="">
+                <div class="img img2"></div>
+            </a>
+            <a href="">
+                <div class="img img3"></div>
+            </a>
+        </div>
+        <!-- 左右箭头 -->
+        <span class="button left" id="pre"></span>
+        <span class="button right" id="next"></span>
+        <!-- 圆点切换 -->
+        <div class="circle" id="circle"> 
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav"></div>
+        <div class="content"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS实现轮播图</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <div class="main" id="main">
+        <!-- 导航栏 -->
+        <div class="menu-box">
+            <div class="menu-title">
+                <a href="#">
+                    <span class="text">手机、配件</span><span class="ico">&#xe665;</span>
+                </a>
+            </div>
+            <div class="menu-title">
+                <a href="#">
+                    <span class="text">电脑</span><span class="ico">&#xe665;</span>
+                </a>
+            </div>
+            <div class="menu-title">
+                 <a href="#">
+                    <span class="text">家用电脑</span><span class="ico">&#xe665;</span>
+                </a>
+            </div>
+            <div class="menu-title">
+                <a href="#">
+                    <span class="text">家具</span><span class="ico">&#xe665;</span>
+                </a>
+            </div>
+        </div>
+        <!-- 子菜单 -->
+        <div class="menu-content">
+            <!-- 每个一级menu对应的内容 -->
+            <div class="content-box">
+                <h3 class="title">手机、配件</h3>
+                <ul>
+                    <li>
+                        <span>手机通讯录：</span>
+                        <a href="#">手机</a>
+                        <span>/</span>
+                        <a href="#">手机维修</a>
+                        <span>/</span>
+                        <a href="#">以旧换新</a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 图片轮播 -->
+        <div class="slider" id="slider">
+            <a href="">
+                <div class="img img1 img-active"></div>
+            </a>
+            <a href="">
+                <div class="img img2"></div>
+            </a>
+            <a href="">
+                <div class="img img3"></div>
+            </a>
+        </div>
+        <!-- 左右箭头 -->
+        <span class="button left" id="pre"></span>
+        <span class="button right" id="next"></span>
+        <!-- 圆点切换 -->
+        <div class="circle" id="circle"> 
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav"></div>
+        <div class="content"></div>
+    </div>
+</body>
+
+</html>
